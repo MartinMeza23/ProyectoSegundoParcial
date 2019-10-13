@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProyectoSegundoParcial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoSegundoParcial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="671.596" Width="621.205" Background="Black">
+    <Grid>
+        <TextBlock x:Name="txtAutos" HorizontalAlignment="Left" Margin="25,55,0,0" TextWrapping="Wrap" Text="Automoviles" VerticalAlignment="Top" Height="24" Width="123" FontSize="17" FontFamily="Arial" Foreground="White"/>
+        <ComboBox x:Name="cbMarca" HorizontalAlignment="Left" Margin="153,55,0,0" VerticalAlignment="Top" Width="243" FontSize="15" Foreground="Black">
+            <ComboBoxItem>Sedan</ComboBoxItem>
+            <ComboBoxItem>Coupe</ComboBoxItem>
+            <ComboBoxItem>Hatchback</ComboBoxItem>
+            <ComboBoxItem>Minivan</ComboBoxItem>
+            <ComboBoxItem>Pick UP</ComboBoxItem>
+            <ComboBoxItem>Convertible</ComboBoxItem>
+            <ComboBoxItem>Deportivo</ComboBoxItem>
+            <ComboBoxItem>4X4</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="210,0,0,0" TextWrapping="Wrap" Text="AutoMotors" VerticalAlignment="Top" Width="151" FontSize="28" FontFamily="Impact" Foreground="Gold" />
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="426,56,0,0" VerticalAlignment="Top" Width="106" Foreground="Gold" Background="Black" Click="btnAgregar_Click"/>
+        <Grid x:Name="grdAutos" HorizontalAlignment="Left" Height="487" Margin="4,110,0,0" VerticalAlignment="Top" Width="602"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="382,602,0,0" VerticalAlignment="Top" Width="92" Background="Black" Foreground="Gold" Click="btnCancelar_Click"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="479,602,0,0" VerticalAlignment="Top" Width="96" Background="Black" Foreground="Gold" Click="btnGuardar_Click"/>
+        <TextBlock x:Name="txtLeyenda" HorizontalAlignment="Left" Margin="23,610,0,0" TextWrapping="Wrap" Text="`Es necesario llenar todos los datos'" VerticalAlignment="Top" Foreground="Gold" FontSize="13"/>
+    </Grid>
+</Window>
